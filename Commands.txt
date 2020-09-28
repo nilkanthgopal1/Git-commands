@@ -1,0 +1,29 @@
+git init
+git add filename or .
+git commit -m "message"
+git remote add origin "git url"
+git push origin master
+
+How to change remote git repository i.e git url repository
+1.1. List your existing remotes
+To list the existing remotes we open the terminal and type in the following command:
+
+$ git remote -v
+If you copied the link to the repository from Clone with SSH in your GitLab, the output should look something like this:
+
+origin git@your.git.repo.example.com:user/repository.git (fetch)
+origin git@your.git.repo.example.com:user/repository.git (push)
+
+2. Change a remote Git repository
+We can change the remote repository by using git remote set-url command:
+
+$ git remote set-url origin git@your.git.repo.example.com:user/repository2.git
+The command takes two arguments: existing name of the remote (in our case origin) and a new remote URL (in our case git@your.git.repo.example.com:user/repository2.git)
+
+In case you change your remote repository to https URL, you will be prompted for your username and password next time you use git fetch, git pull or git push.
+
+--------------------------------------------------------------------------------------------------------------------------------
+To write a git commit, start by typing git commit on your Terminal or Command Prompt which brings up a Vim interface for entering the commit message.
+Type the subject of your commit on the first line. ...
+Write a detailed description of what happened in the committed change. ...
+Press Esc and then type :wq to save and exit.
