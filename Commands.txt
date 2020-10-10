@@ -1,9 +1,15 @@
 git init
+git diff (to check the new modified files)
 git add filename or .
 git commit -m "message"
 git remote add origin "git url"
 git push origin master
 
+---------------------------------------------------------
+
+git clone to copy the github repository to local folder.
+
+-----------------------------------------------------------------
 How to change remote git repository i.e git url repository
 1.1. List your existing remotes
 To list the existing remotes we open the terminal and type in the following command:
